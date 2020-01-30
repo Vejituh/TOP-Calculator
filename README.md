@@ -1,0 +1,1 @@
+This is the calculator project that is on The Odin Project. In this project I used my html, css and JS skills to make a functioning calcultor. This calculator takes various functions so that the calculator can store the operator and numbers the user uses.
