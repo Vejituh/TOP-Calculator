@@ -25,7 +25,7 @@
                 <button class="btn btnop">-</button>
                 <button class="btn btnum">0</button>
                 <button class="btn">.</button>
-                <button class="btn btnclear">C</button>
+                <button class="btn">C</button>
                 <button class="btn btnop">+</button>
                 <button class="btn btnequals">=</button>
             </div>

@@ -11,6 +11,21 @@
     flex-flow:row wrap;
     width:20rem;
     background:navy;
+    justify-content:center;
+}
+
+h3 {
+    width:100%;
+    color: #FFFFFF;
+    text-align:center;
+}
+
+.result{
+    width:100%;
+    color: #FFFFFF;
+    text-align:center;
+    border: 0.1rem solid #FFFFFF;
+    padding: 1rem;
 }
 
 .btn {

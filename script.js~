@@ -3,7 +3,6 @@ let total = 0;
 const btnNums = document.querySelectorAll ('.btnum');
 const btnOperators = document.querySelectorAll ('.btnop');
 const btnEquals = document.querySelectorAll ('.btnequals');
-const btnClear = document.querySelectorAll ('.btnclear');
 let results = document.querySelectorAll('.result');
 let num1 = '';
 let num2 = '';
@@ -38,32 +37,11 @@ btnOperators.forEach((btnOperator) => {
 })
 
 btnEquals[0].addEventListener('click', (e) => {
-if (num1 == '' || num2 == '') {results[0].innerHTML = 'Error';}
-else if (sign === divide && num1 == '0' || num2 == '0'){results[0].innerHTML = 'You Lose!';}
- else {
         results[0].innerHTML = '';
         num1 = operate(sign,num1,num2).toString(); num2 = '';
-        if(num1 % 1 != 0){
-        num1 = (+num1).toFixed(2);
-            results[0].innerHTML = num1;
-                    count = '';
-        }else {
         results[0].innerHTML = +num1;
         count = '';
-}
-}
 })
-
-btnClear[0].addEventListener('click', (e) => {
-    num1 = '';
-    num2 = '';
-    currentNum = '';
-    sign = '';
-    count = 0;
-    previousSign = '';
-    total = 0;
-    results[0].innerHTML = '';
-});
 
 const add = (num1,num2) => {total = parseInt(num1) + parseInt(num2);}
 const subtract = (num1,num2) => {total =  parseInt(num1) - parseInt(num2)}
